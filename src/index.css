@@ -12,3 +12,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-color: #f9f9f9 !important;
+}
+
+.post-title {
+  margin: 0 0 0.3rem;
+}
+
+.buttonLink {
+  color: #fff;
+}
+
+.buttonLink:hover {
+  color: #efefef;
+}
+
+.buttonLinkBasic {
+  color: inherit;
+}
+
+.buttonLinkBasic:hover {
+  color: #616161;
+}
+
+.footerContainer {
+  padding: 4rem !important;
+  border-top: none !important;
+  margin-top: 2rem !important;
+}

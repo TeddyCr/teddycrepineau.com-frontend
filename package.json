@@ -1,12 +1,32 @@
 {
   "name": "teddycrepineau-frontend",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "proxy": "http://127.0.0.1:8000/",
   "private": true,
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
   "dependencies": {
+    "bootstrap": "^4.2.1",
+    "connected-react-router": "^6.1.0",
+    "history": "^4.7.2",
+    "jquery": "^3.3.1",
+    "jwt-decode": "^2.2.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.2"
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.2",
+    "react-transition-group": "^2.5.2",
+    "reactstrap": "^6.5.0",
+    "redux": "^4.0.1",
+    "redux-api-middleware": "^3.0.1",
+    "redux-persist": "^5.10.0",
+    "redux-persist-transform-filter": "0.0.18",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0"
   },
+  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -21,5 +41,7 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "author": "",
+  "license": "ISC"
 }
