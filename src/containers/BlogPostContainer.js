@@ -4,11 +4,14 @@ import { getposts } from '../actions/getposts'
 import { posts } from '../reducers'
 import PostComponent from '../components/postComponent'
 
+
 class Posts extends Component {
 
-    componentDidMount() {(
+    componentDidMount() {
+        (
         this.props.fetchPosts()
-    )}
+    )
+    }
 
     render() {
         const publishedPosts = this.props.fetchedPosts

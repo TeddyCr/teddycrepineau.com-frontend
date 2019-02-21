@@ -5,7 +5,6 @@ import { posts } from '../reducers'
 import PostFeedComponent from '../components/postFeedComponent'
 import { bindActionCreators } from 'redux';
 
-
 class Posts extends Component {
 
     componentDidMount() {

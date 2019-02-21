@@ -9,6 +9,7 @@ import {
 } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import Resume from '../static/Resume-TeddyCrepineau.pdf'
+import GoogleTagManager from './gtm'
 
 const navbarContainer = {
     backgroundColor: '#fff',
@@ -46,15 +47,16 @@ class NavBar extends Component {
         const { activeItem } = this.state
         return (
             <div>
+                <GoogleTagManager gtmId='GTM-TG54K4G' />
                 <Container style={ navbarHeader }>
                     <Header as='h1' style={ paraNavbarHeader }>Teddy Crepineau</Header>
                     <p style={ paraNavbarPara }>Driving Business Efficiency Using Data and Technology</p>
-                    <Button secondary><a className='buttonLink' href={ Resume } target="_blank" rel="noopener noreferrer">Download Resume</a></Button>
+                    <Button secondary><a className='buttonLink'  id="view-resume-nav-bar" href={ Resume } target="_blank" rel="noopener noreferrer">Download Resume</a></Button>
                     <Button color="linkedin">
-                        <Icon name="linkedin" /><a className='buttonLink' href="https://www.linkedin.com/in/teddycrepineau/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                        <Icon name="linkedin" /><a id="linkedin-nav-bar" className='buttonLink' href="https://www.linkedin.com/in/teddycrepineau/" target="_blank" rel="noopener noreferrer">Linkedin</a>
                     </Button>
                     <Button basic color='black'>
-                        <Icon name='github'/><a className='buttonLinkBasic' href="https://github.com/TeddyCr" target="_blank" rel="noopener noreferrer">Github</a>
+                        <Icon name='github'/><a id="github-nav-bar" className='buttonLinkBasic' href="https://github.com/TeddyCr" target="_blank" rel="noopener noreferrer">Github</a>
                     </Button>
                 </Container>
                    <Menu pointing secondary style={ navbarContainer }>

@@ -34,14 +34,14 @@ class Footer extends Component {
                         <List.Item>
                                 <List.Header>Network</List.Header>
                             </List.Item>                            
-                            <List.Item as='a' href="https://www.linkedin.com/in/teddycrepineau/" target="_blank" rel="noopener noreferrer">Linkedin</List.Item>
-                            <List.Item as='a' href="https://github.com/TeddyCr" target="_blank" rel="noopener noreferrer">Github</List.Item>
+                            <List.Item id="linkedin-footer" as='a' href="https://www.linkedin.com/in/teddycrepineau/" target="_blank" rel="noopener noreferrer">Linkedin</List.Item>
+                            <List.Item id="github-footer" as='a' href="https://github.com/TeddyCr" target="_blank" rel="noopener noreferrer">Github</List.Item>
                         </List>
                     </Grid.Column>
                     <Grid.Column textAlign='center' width={8}>
                         <Header as='h3'>View Resume</Header>
                         <p>Download my resume right now and see how we can work together</p>
-                        <Button secondary><a className="buttonLink" href={ Resume } target="_blank" rel="noopener noreferrer">Download Resume</a></Button>
+                        <Button secondary><a className="buttonLink" id="view-resume-footer" href={ Resume } target="_blank" rel="noopener noreferrer">Download Resume</a></Button>
                     </Grid.Column>
                 </Grid.Row>
                 </Grid>
