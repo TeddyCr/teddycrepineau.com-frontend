@@ -1,5 +1,5 @@
 {
-  "name": "teddycrepineau-frontend",
+  "name": "frontend",
   "version": "1.0.0",
   "proxy": "http://django:8000/",
   "private": true,

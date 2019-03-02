@@ -24,9 +24,9 @@ class HomePageComponent extends Component {
                         return ([
                             <Grid.Column >
                                  <div id={ key }>
-                                    <Image src={ "http://localhost:8000" + value.profile_picture_url } centered='true' size="small" />
+                                    <Image src={ value.profile_picture_url } centered='true' size="small" />
                                     <Header as="h2">Welcome</Header>
-                                    <p style={{ fontSize: '1.2rem' }}>{ value.short_bio }</p>
+                                    <div style={{ fontSize: '1.2rem' }} dangerouslySetInnerHTML={{ __html: value.short_bio }}></div>
                                     <Button as={ Link } to='/about/' basic color='black' disabled>More</Button> 
                                  </div>
                             </Grid.Column>
